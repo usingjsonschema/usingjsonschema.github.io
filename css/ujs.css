@@ -1,0 +1,9 @@
+#fullpage { width:800px; margin-right:auto; margin-left:auto; font-family:'Arial','Sans-Serif'; }
+
+.nav { height:2em; color:#FFFFFF; background-color:#476BB2;  }
+.nav ul { list-style-type:none; margin:0; padding-top:0.25em; float:right; } 
+.nav ul li { display:inline; }
+.navItem { color:#FFFFFF; margin-right:12px; text-decoration:none; }
+
+#sectionHeader { clear:both; height:50px; color:#FFFFFF; background-color:#476BB2; }
+#titleText { float:left; padding-left:8px; font-size:36px; }
