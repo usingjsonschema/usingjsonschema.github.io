@@ -4,30 +4,55 @@
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <title>Using JSON Schema</title>
 
-  <link rel='stylesheet' href='css/ujs.css'>
-  <link rel='stylesheet' href='css/jquery-ui-1.10.4.custom.css'>
+  <link rel='stylesheet' href='css/main.css'>
 </head>
 <body>
   <div id='fullpage'>
-    <div class='nav'>
+    <header>
+      <h1><i>Using JSON Schema</i> Project</h1>
+    </header>
+    <nav>
       <ul>
-        <li><a class='navItem' href='javascript:showAboutWindow ();'>About</a><li>
+        <li><a href='#'>Examples</a>
+        </li>
+        <li><a href='#'>Javascript/Node.js</a>
+          <ul>
+            <li><a href='https://github.com/usingjsonschema/ujs-jsonsyntax-nodejs'>jsonsyntax</a>
+          </ul>
+        </li>
+        <li><a href='#'>Python</a>
+          <ul>
+            <li><a href='https://github.com/usingjsonschema/ujs-jsonsyntax-python'>jsonsyntax</a>
+          </ul>
+        <li>
+        <li><a href='#'>Web</a>
+        <li>
       </ul>
-    </div>
+    </nav>
 
-    <div id='sectionHeader'>
-      <div id='titleText'>Using JSON Schema</div>
-    </div>
-    <p>Under construction.</p>
-    <div id='sectionFooter'>
-    </div>
-  </div>
+    <article>
+      <p>The <i>Using JSON Schema</i> project is a set of repositories containing,</p>
+      <ul>
+        <li>JSON Schema capabilities expressed through examples that can be
+        used with command line and web tools.</li>
+        <li>Command line tools written in both Javascript (Node.js) and Python.
+      </ul>
 
-  <div style='display:none' id='about' title='About'>
+      <p>The individual project repositories can be accessed through the navigation
+      bar.</p>
+      <p>The introductory project, <b>jsonsyntax</b>, is a simple command line
+      that checks the syntax of a JSON file. It exits with a return code of zero
+      (successful) or one (failure), making it useful for use in scripts. It can
+      also be used as a library.</p>
+    </article>
+
+    <aside>
+      <h4>JSON Schema Resources</h4>
+      <p>JSON Schema <a href='http://json-schema.org'>home</a> website</p>
+    </aside>
   </div>
 
   <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src='js/ujs.js'></script>
+  <script src='js/main.js'></script>
 </body>
 </html>
