@@ -18,12 +18,16 @@
         <li><a href='#'>Javascript/Node.js</a>
           <ul>
             <li><a href='https://github.com/usingjsonschema/ujs-jsonsyntax-nodejs'>jsonsyntax</a>
+            <li><a href='https://github.com/usingjsonschema/ujs-jsonvalidate-nodejs'>jsonvalidate</a>
+            <li><a href='https://github.com/usingjsonschema/ujs-safefile-nodejs'>safefile</a>
             <li><a href='https://github.com/usingjsonschema/ujs-format-nodejs'>format</a>
           </ul>
         </li>
         <li><a href='#'>Python</a>
           <ul>
             <li><a href='https://github.com/usingjsonschema/ujs-jsonsyntax-python'>jsonsyntax</a>
+            <li><a href='https://github.com/usingjsonschema/ujs-jsonvalidate-python'>jsonvalidate</a>
+            <li><a href='https://github.com/usingjsonschema/ujs-safefile-python'>safefile</a>
           </ul>
         <li>
         <li><a href='#'>Web</a>
@@ -41,12 +45,31 @@
 
       <p>The individual project repositories can be accessed through the navigation
       bar.</p>
+      <h4>jsonsyntax - JSON Syntax Check library / utility</h4>
       <p>The introductory project, <b>jsonsyntax</b>, is a simple command line
       that checks the syntax of a JSON file. It exits with a return code of zero
       (successful) or one (failure), making it useful for use in scripts. It can
       also be used as a library.</p>
       <p>The <b>format</b> repository contains a simple utility for creating
       formatted message strings using replacement parameters.</p>
+      <h4>jsonvalidate - JSON Validation library / utility</h4>
+      <p><b>jsonvalidate</b> provides a library, also with command line / script
+      support, that enables JSON validation to be performed with JSON Schema
+      definitions. It supports,
+      <ul>
+        <li>Loading the JSON content and schema, along with referenced schemas,
+        from the local file system. Convenient for development time and testing. </li>
+        <li>Support for local and remote schema content access.
+        <li>Loading JSON reference content from custom storage resources, using
+        resource specific URI identification. Different approaches are used for
+        the Javascript/Node.js and Python approaches.</li>
+      </ul>
+      <h4>safefile - Automated Recovery File library</h4>
+      <p>Using JSON files for programs with higher robustness requirements is
+      assisted by a library for file read/write that supports automated
+      recovery processing. The <b>safefile</b> library writes content in a
+      recoverable manner, which can be inspected and recovered through automation
+      for most failure conditions.</p>
     </article>
 
     <aside>

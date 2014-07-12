@@ -1,3 +1,3 @@
 # Using JSON Schema project page
 
-[Link to page] (http://usingjsonschema.github.io/)
+[Link to page](http://usingjsonschema.github.io/)
