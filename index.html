@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div style="float:right"><img src="{{ site.url }}/assets/UJS_Book-257x300.png"/></div>
+  <p>Using JSON Schema is a
+  <a title="book" href="{{ site.url }}/book">Book</a> and
+  <a title="GitHub project" href="{{ site.url }}/project">GitHub project</a>,
+  showing how JSON Schema can be used for a variety of tasks and in different programming contexts.</p>
+ 
+ <p>To work with the book examples, and try out your own JSON schemas, the online
+ <a title="JSON Validate" href="http://jsonvalidate.com" target="_blank"> JSON Validate</a> tool
+ allows you to interactively create, edit and test JSON content and JSON Schema definitions.
+ The <em>Import</em> menu gives you easy access to the examples in the book.
+ Go to <a title="JSON Validate" href="http://jsonvalidate.com" target="_blank">jsonvalidate.com</a>
+ to use the tool.</p>
+ 
+ <p>To download the book (iBookstore, ePUB and PDF editions) and the accompanying materials for the book,
+ head to the <a title="Downloads" href="{{ site.url }}/downloads">Downloads</a> page.</p>
+ 
+ <p>Thank you for visiting.</p>
+
+ <div style="border:1px dotted lightgray; margin-top:32px;">
+  <h1 class="page-heading">Recent articles</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts offset:0 limit:5 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <b>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </b>
+      </li>
+    {% endfor %}
+  </ul>
+ </div>
+</div>

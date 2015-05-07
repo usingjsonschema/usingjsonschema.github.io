@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    <img style="float:right" src="{{ site.url }}/assets/ccby-88x31.png"/>
+    {{ content }}
+  </article>
+
+  {% if page.previous %}
+    <a style="float:left" rel="previous" href="{{ page.previous.url }}">&larr; Previous post</a>
+  {% endif %}
+  {% if page.next %}
+    <a style="float:right" rel="next" href="{{ page.next.url }}">Next post &rarr;</a>
+  {% endif %}
+  <br/>
+  {% if page.previous %}
+    <span style="float:left">{{ page.previous.title }}</span>
+  {% endif %}
+  {% if page.next %}
+    <span style="float:right">{{ page.next.title }}</span>
+  {% endif %}
+</div>

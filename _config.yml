@@ -1,0 +1,7 @@
+# Site settings
+title: Using JSON Schema
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://usingjsonschema.com"
+github_username: joemcintyre
+# Build settings
+markdown: kramdown
